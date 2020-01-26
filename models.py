@@ -103,3 +103,11 @@ class StarCapitalScrapeUld(Base):
 
       def __str__(self):
             return self.country
+
+      @classmethod
+      def bulk_insert(cls,df):
+          objects = []
+          df = df.fillna(0)
+          for index, row in df.iterrows():
+              objects.append(cls(row.to_dict()))
+          return objects
