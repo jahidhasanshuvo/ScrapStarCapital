@@ -1,5 +1,5 @@
 lml==0.0.9
-numpy==1.18.1
+numpy==1.22.0
 pandas==0.25.3
 pyexcel==0.5.15
 pyexcel-io==0.5.20
